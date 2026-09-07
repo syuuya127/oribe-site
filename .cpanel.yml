@@ -7,5 +7,5 @@ deployment:
     - export DEPLOYPATH=$HOME/public_html/oribe-sushi.com.my
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $DEPLOYPATH/
-    - /bin/rm -rf $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/images $DEPLOYPATH/videos
-    - /bin/cp -R css js images videos $DEPLOYPATH/
+    - /bin/rm -rf $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/images
+    - /bin/cp -R css js images $DEPLOYPATH/
