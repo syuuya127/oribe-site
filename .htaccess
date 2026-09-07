@@ -1,0 +1,30 @@
+# cPanel (Apache) に置く場合の設定。Cloudflare Pages では無視されます。
+RewriteEngine On
+
+# HTTPS + 非 www に統一
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://oribe-sushi.com.my/$1 [R=301,L]
+
+# /menu.html → /menu  (旧URLからの301)
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteCond %{THE_REQUEST} \s/([a-z0-9-]+)\.html[\s?] [NC]
+RewriteRule ^([a-z0-9-]+)\.html$ /$1 [R=301,L]
+
+# /menu → menu.html を配信
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([a-z0-9-]+)/?$ $1.html [L]
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 7 days"
+  ExpiresByType image/png  "access plus 7 days"
+  ExpiresByType video/mp4  "access plus 7 days"
+  ExpiresByType text/css   "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+</IfModule>

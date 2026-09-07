@@ -1,0 +1,2 @@
+# Cloudflare Pages: www を非 www に統一
+https://www.oribe-sushi.com.my/* https://oribe-sushi.com.my/:splat 301
