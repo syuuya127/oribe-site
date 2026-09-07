@@ -1,9 +1,11 @@
-# cPanel (Apache) に置く場合の設定。Cloudflare Pages では無視されます。
+# cPanel (Apache) 用の設定。Cloudflare Pages では無視されます。
 RewriteEngine On
 
-# HTTPS + 非 www に統一
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} ^www\. [NC]
+# 本番ドメインのみ: HTTPS + 非 www に統一(ステージング new.oribe-sushi.com.my には適用しない)
+RewriteCond %{HTTP_HOST} ^www\.oribe-sushi\.com\.my$ [NC]
+RewriteRule ^(.*)$ https://oribe-sushi.com.my/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^oribe-sushi\.com\.my$ [NC]
+RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://oribe-sushi.com.my/$1 [R=301,L]
 
 # /menu.html → /menu  (旧URLからの301)
@@ -19,12 +21,18 @@ RewriteRule ^([a-z0-9-]+)/?$ $1.html [L]
 
 ErrorDocument 404 /404.html
 
+# ステージングは検索エンジンに載せない
+SetEnvIfNoCase Host ^new\.oribe-sushi\.com\.my$ STAGING
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow" env=STAGING
+</IfModule>
+
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/webp "access plus 7 days"
   ExpiresByType image/jpeg "access plus 7 days"
   ExpiresByType image/png  "access plus 7 days"
-  ExpiresByType video/mp4  "access plus 7 days"
+  ExpiresByType image/svg+xml "access plus 7 days"
   ExpiresByType text/css   "access plus 1 day"
   ExpiresByType application/javascript "access plus 1 day"
 </IfModule>
