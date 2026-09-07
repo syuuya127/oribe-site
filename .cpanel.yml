@@ -1,0 +1,11 @@
+# cPanel「Git Version Control」から本番ディレクトリへ配置するための設定。
+# cPanel でこのリポジトリを clone し、「Pull or Deploy」→「Deploy HEAD Commit」を押すと下記が実行されます。
+# DEPLOYPATH は cPanel の Domains 画面に表示される Document Root に合わせてください。
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/oribe-sushi.com.my
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $DEPLOYPATH/
+    - /bin/rm -rf $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/images $DEPLOYPATH/videos
+    - /bin/cp -R css js images videos $DEPLOYPATH/
