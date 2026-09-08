@@ -1,15 +1,19 @@
 # cPanel「Git Version Control」から配置するための設定。
 # 「Pull or Deploy」→「Deploy HEAD Commit」で下記が実行されます。
-#
-# 配置先(DEPLOYPATH)は cPanel の Domains 画面の Document Root に合わせる:
-#   ステージング: $HOME/new.oribe-sushi.com.my
-#   本番:         $HOME/public_html/oribe-sushi.com.my
-# 本番へ切り替えるときは下の DEPLOYPATH を本番のパスに変えて push し、再度 Deploy する。
+# ステージング(new.oribe-sushi.com.my)と本番(oribe-sushi.com.my)の両方に同じ内容を配置します。
+# パスは cPanel の Domains 画面の Document Root に合わせること。
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/new.oribe-sushi.com.my
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $DEPLOYPATH/
-    - /bin/rm -rf $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/images
-    - /bin/cp -R css js images $DEPLOYPATH/
+    # ステージング
+    - export STG=$HOME/new.oribe-sushi.com.my
+    - /bin/mkdir -p $STG
+    - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $STG/
+    - /bin/rm -rf $STG/css $STG/js $STG/images
+    - /bin/cp -R css js images $STG/
+    # 本番
+    - export PROD=$HOME/public_html/oribe-sushi.com.my
+    - /bin/mkdir -p $PROD
+    - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $PROD/
+    - /bin/rm -rf $PROD/css $PROD/js $PROD/images
+    - /bin/cp -R css js images $PROD/
