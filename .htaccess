@@ -13,9 +13,9 @@ RewriteRule ^(.*)$ https://oribe-sushi.com.my/$1 [R=301,L]
 # 旧サイト(PHP時代)の URL からの301
 #   /menu.php → /menu (Googleビジネスプロフィールの「メニュー」リンクがこれを指している)
 #   /index.php → /、その他 /xxx.php → /xxx
-RewriteRule ^index\.php$ / [R=301,L]
-RewriteRule ^menu\.php$ /menu [R=301,L]
-RewriteRule ^([a-z0-9-]+)\.php$ /$1 [R=301,L]
+#   /reservation.php など今は存在しないページはトップへ
+RewriteRule ^(menu|about|gallery|omakase|our-chef|sake-pairing)\.php$ /$1 [R=301,L]
+RewriteRule ^[a-z0-9_-]+\.php$ / [R=301,L]
 
 # /menu.html → /menu  (旧URLからの301)
 RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
