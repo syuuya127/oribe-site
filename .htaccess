@@ -2,7 +2,9 @@
 RewriteEngine On
 
 # 本番ドメインのみ: HTTPS + 非 www に統一(ステージング new.oribe-sushi.com.my には適用しない)
-RewriteCond %{HTTP_HOST} ^www\.oribe-sushi\.com\.my$ [NC]
+# www. や mail. など、正規ホスト以外でサイトが表示されるホストはすべて正規ホストへ
+RewriteCond %{HTTP_HOST} !^oribe-sushi\.com\.my$ [NC]
+RewriteCond %{HTTP_HOST} !^new\.oribe-sushi\.com\.my$ [NC]
 RewriteRule ^(.*)$ https://oribe-sushi.com.my/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^oribe-sushi\.com\.my$ [NC]
 RewriteCond %{HTTPS} off
