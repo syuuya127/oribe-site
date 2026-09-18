@@ -1,0 +1,72 @@
+/*
+ * 自社ホスティング移行後に追加したスタイル調整。
+ * Webflow が生成した CSS は触らず、このファイルで上書きする。
+ */
+
+/*
+ * ヘッダー右側(SAKE PAIRING / PRIVATE EVENTS / MENU / RESERVATION)
+ * PRIVATE EVENTS を追加して 1 項目増えたため、Webflow の下書きと同じ考え方で
+ * 右寄せ・リンクの左右余白なし・項目間 18px にしてロゴとの重なりを防ぐ。
+ * スマホ用メニュー(991px 以下)には影響させない。
+ */
+@media screen and (min-width: 992px) {
+  .nav-menu-three-2 > ul.nav-menu-block-2:last-of-type {
+    justify-content: flex-end;
+    grid-column-gap: 18px;
+    column-gap: 18px;
+    margin-left: 0;
+    margin-right: -79px;
+  }
+
+  .nav-menu-three-2 > ul.nav-menu-block-2:last-of-type .nav-link-accent-2 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/*
+ * 992〜1199px は横幅が足りない。元の Webflow の CSS でも左端の HOME が
+ * 画面外にはみ出していたため、はみ出し用のマイナス余白を外し、文字と間隔を詰める。
+ */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .nav-menu-three-2 > ul.nav-menu-block-2:first-of-type {
+    margin-left: 0;
+  }
+
+  .nav-menu-three-2 > ul.nav-menu-block-2:first-of-type .nav-link-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+  }
+
+  .nav-menu-three-2 > ul.nav-menu-block-2:last-of-type {
+    margin-right: 0;
+    grid-column-gap: 10px;
+    column-gap: 10px;
+  }
+
+  /* 他ページは .nav-link-accent-2、Private Events ページは .link-8/9/10 */
+  .nav-menu-three-2 > ul.nav-menu-block-2:last-of-type a:not(.w-button) {
+    font-size: 12px;
+  }
+
+  .nav-menu-three-2 > ul.nav-menu-block-2:last-of-type .w-button {
+    padding-left: 12px;
+    padding-right: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+/*
+ * Private Events ページ: 見出し横の金色の装飾線(events-line)は
+ * Webflow の下書き段階でピクセル指定の余白が入っており、
+ * タブレット・スマホでは画面外にはみ出して横スクロールの原因になる。
+ * 見出しが折り返す 991px 以下では表示しない(装飾のみで内容には影響なし)。
+ */
+@media screen and (max-width: 991px) {
+  .div-block-73.events-line {
+    display: none;
+  }
+}

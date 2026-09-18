@@ -8,10 +8,12 @@ https://oribe-sushi.com.my の静的サイトです。2026年9月にWebflowか�
 
 | パス | 内容 |
 |---|---|
-| `index.html` ほか 7 ページ | 各ページ本体。URL は `/menu` のように拡張子なし |
+| `index.html` ほか 8 ページ | 各ページ本体。URL は `/menu` のように拡張子なし |
 | `css/` | サイトのスタイルシート(Webflow 生成) |
 | `js/` | jQuery と Webflow のランタイム(スライダー・ライトボックスなど) |
 | `images/` | 画像。`-p-500` などの接尾辞はレスポンシブ用のサイズ違い |
+| `videos/` | Private Events ページの背景動画(音声なし H.264) |
+| `css/site-overrides.css` | 移行後に追加したスタイル調整(Webflow 生成の CSS は直接触らない) |
 | `404.html` | 404 ページ |
 | `sitemap.xml` / `robots.txt` | 検索エンジン向け |
 | `_redirects` / `_headers` | Cloudflare Pages 用(www → 非 www、キャッシュ) |
@@ -19,10 +21,10 @@ https://oribe-sushi.com.my の静的サイトです。2026年9月にWebflowか�
 | `serve.py` | ローカル確認用サーバー |
 | `scripts/mirror_live_site.py` | 移行時に公開サイトを取り込んだスクリプト(記録用) |
 
-ページ: `/` `/menu` `/our-chef` `/gallery` `/about` `/sake-pairing` `/omakase`
+ページ: `/` `/menu` `/our-chef` `/gallery` `/about` `/sake-pairing` `/omakase` `/private-events`
 
-Webflow の編集画面には未公開の下書き(Private Events ページ、ナビの変更、Omakase ページの写真差し替え)が残っていました。
-移行時には公開版に合わせたため、それらは含まれていません。必要になったら HTML を追加してください。
+Private Events ページは Webflow の未公開下書きから 2026年9月に公開しました(スタイルは下書き時の `css/new-sushi-oribe-b0dca6.webflow.css` を使用)。
+同じ下書きにあった Omakase ページの写真差し替えは未反映です。
 
 ## ローカルで確認する
 
@@ -43,7 +45,7 @@ Claude Code に「menu.html の春メニュー画像を images/xxx.jpg に差し
 
 ## 計測タグ
 
-`<head>` に以下が入っています。変更する場合は 7 ページすべてを直してください。
+`<head>` に以下が入っています。変更する場合は 8 ページすべてを直してください。
 
 - GA4: `G-VR69HZB6WG`
 - Google Tag Manager: `GTM-K32VKRM`

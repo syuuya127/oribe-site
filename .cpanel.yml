@@ -12,13 +12,13 @@ deployment:
     - export STG=$HOME/new.oribe-sushi.com.my
     - /bin/mkdir -p $STG
     - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $STG/
-    - /bin/rm -rf $STG/css $STG/js $STG/images
-    - /bin/cp -R css js images $STG/
+    - /bin/rm -rf $STG/css $STG/js $STG/images $STG/videos
+    - /bin/cp -R css js images videos $STG/
     # 本番(初回は旧サイトを退避)
     - export PROD=$HOME/public_html/oribe-sushi.com.my
     - if [ -d "$PROD" ] && [ ! -e "$PROD/.deployed-from-git" ]; then /bin/mv "$PROD" "$HOME/oribe-site-backup-$(date +%Y%m%d-%H%M)"; fi
     - /bin/mkdir -p $PROD
     - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $PROD/
-    - /bin/rm -rf $PROD/css $PROD/js $PROD/images
-    - /bin/cp -R css js images $PROD/
+    - /bin/rm -rf $PROD/css $PROD/js $PROD/images $PROD/videos
+    - /bin/cp -R css js images videos $PROD/
     - /bin/touch $PROD/.deployed-from-git
