@@ -1,11 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://oribe-sushi.com.my</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://oribe-sushi.com.my/menu</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://oribe-sushi.com.my/our-chef</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://oribe-sushi.com.my/gallery</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://oribe-sushi.com.my/about</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://oribe-sushi.com.my/sake-pairing</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://oribe-sushi.com.my/omakase</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://oribe-sushi.com.my/private-events</loc><lastmod>2026-09-18</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://oribe-sushi.com.my</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/zh/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/ja/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/menu</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/menu"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/menu"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/menu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/menu"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/zh/menu</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/menu"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/menu"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/menu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/menu"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/ja/menu</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/menu"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/menu"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/menu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/menu"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/our-chef</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/our-chef"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/our-chef"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/our-chef"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/our-chef"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/zh/our-chef</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/our-chef"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/our-chef"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/our-chef"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/our-chef"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/ja/our-chef</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/our-chef"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/our-chef"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/our-chef"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/our-chef"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/gallery</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/gallery"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/gallery"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/gallery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/gallery"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/zh/gallery</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/gallery"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/gallery"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/gallery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/gallery"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/ja/gallery</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/gallery"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/gallery"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/gallery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/gallery"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/about</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/about"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/about"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/zh/about</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/about"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/about"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/ja/about</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/about"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/about"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/sake-pairing</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/sake-pairing"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/sake-pairing"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/sake-pairing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/sake-pairing"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/zh/sake-pairing</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/sake-pairing"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/sake-pairing"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/sake-pairing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/sake-pairing"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/ja/sake-pairing</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/sake-pairing"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/sake-pairing"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/sake-pairing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/sake-pairing"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/omakase</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/omakase"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/omakase"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/omakase"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/omakase"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/zh/omakase</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/omakase"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/omakase"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/omakase"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/omakase"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/ja/omakase</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/omakase"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/omakase"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/omakase"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/omakase"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/private-events</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/private-events"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/private-events"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/private-events"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/private-events"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/zh/private-events</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/private-events"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/private-events"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/private-events"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/private-events"/>
+  </url>
+  <url>
+    <loc>https://oribe-sushi.com.my/ja/private-events</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oribe-sushi.com.my/private-events"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oribe-sushi.com.my/zh/private-events"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oribe-sushi.com.my/ja/private-events"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oribe-sushi.com.my/private-events"/>
+  </url>
 </urlset>

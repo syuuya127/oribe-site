@@ -1,10 +1,13 @@
 # cPanel「Git Version Control」から配置するための設定。
 # 「Pull or Deploy」→「Deploy HEAD Commit」で下記が実行されます。
-# ステージング(new.oribe-sushi.com.my)と本番(oribe-sushi.com.my)の両方に同じ内容を配置します。
+# ステージング(new.oribe-sushi.com.my)と本番(oribe-sushi.com.my)に同じ内容を配置します。
 # パスは cPanel の Domains 画面の Document Root に合わせること。
 #
 # 本番フォルダに Git 管理外の古いサイトが残っていた場合、初回のみ
 # $HOME/oribe-site-backup-<日時> に丸ごと退避してから配置します(削除はしない)。
+#
+# ★ 2026-09 多言語化(/zh/ /ja/)の確認中のため、本番への配置を一時停止しています。
+#    ステージングでの確認が済んだら、下の「本番」ブロックの先頭の # を外して再デプロイしてください。
 ---
 deployment:
   tasks:
@@ -12,13 +15,13 @@ deployment:
     - export STG=$HOME/new.oribe-sushi.com.my
     - /bin/mkdir -p $STG
     - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $STG/
-    - /bin/rm -rf $STG/css $STG/js $STG/images $STG/videos
-    - /bin/cp -R css js images videos $STG/
-    # 本番(初回は旧サイトを退避)
-    - export PROD=$HOME/public_html/oribe-sushi.com.my
-    - if [ -d "$PROD" ] && [ ! -e "$PROD/.deployed-from-git" ]; then /bin/mv "$PROD" "$HOME/oribe-site-backup-$(date +%Y%m%d-%H%M)"; fi
-    - /bin/mkdir -p $PROD
-    - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $PROD/
-    - /bin/rm -rf $PROD/css $PROD/js $PROD/images $PROD/videos
-    - /bin/cp -R css js images videos $PROD/
-    - /bin/touch $PROD/.deployed-from-git
+    - /bin/rm -rf $STG/css $STG/js $STG/images $STG/videos $STG/zh $STG/ja
+    - /bin/cp -R css js images videos zh ja $STG/
+    # 本番(初回は旧サイトを退避) ※確認中のため一時停止
+    # - export PROD=$HOME/public_html/oribe-sushi.com.my
+    # - if [ -d "$PROD" ] && [ ! -e "$PROD/.deployed-from-git" ]; then /bin/mv "$PROD" "$HOME/oribe-site-backup-$(date +%Y%m%d-%H%M)"; fi
+    # - /bin/mkdir -p $PROD
+    # - /bin/cp -f *.html robots.txt sitemap.xml .htaccess $PROD/
+    # - /bin/rm -rf $PROD/css $PROD/js $PROD/images $PROD/videos $PROD/zh $PROD/ja
+    # - /bin/cp -R css js images videos zh ja $PROD/
+    # - /bin/touch $PROD/.deployed-from-git

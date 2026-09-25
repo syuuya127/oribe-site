@@ -16,6 +16,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def do_GET(self):
         path = self.path.split("?")[0].split("#")[0]
+        if path.endswith("/") and path != "/" and os.path.isdir(os.path.join(ROOT, path.strip("/"))):
+            return super().do_GET()
         if path != "/" and "." not in os.path.basename(path):
             candidate = os.path.join(ROOT, path.strip("/") + ".html")
             if os.path.isfile(candidate):

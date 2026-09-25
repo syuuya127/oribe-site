@@ -70,3 +70,32 @@
     display: none;
   }
 }
+
+/*
+ * 言語切替(EN · 中文 · 日本語)
+ * 固定ヘッダーの右上隅、ナビ項目より上の余白に小さく置く。
+ * HTML は scripts/build_i18n.py が全ページに挿入する。
+ */
+.lang-switch {
+  position: absolute;
+  top: 4px;
+  right: 14px;
+  z-index: 100;
+  font-family: Arial, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: .5px;
+  white-space: nowrap;
+}
+.lang-switch a {
+  color: #b89867;
+  text-decoration: none;
+  padding: 2px 3px;
+}
+.lang-switch a:hover { color: #fff; }
+.lang-switch a.is-current { color: #fff; pointer-events: none; }
+.lang-switch-sep { color: #5a5a5a; padding: 0 1px; }
+
+/* 中国語・日本語の本文は各言語のフォントで表示する */
+html[lang="zh-Hans"] body { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif; }
+html[lang="ja"] body { font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", Arial, sans-serif; }

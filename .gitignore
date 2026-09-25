@@ -3,3 +3,4 @@ _source/
 __pycache__/
 .DS_Store
 Thumbs.db
+i18n/_keys.json

@@ -20,8 +20,13 @@ https://oribe-sushi.com.my の静的サイトです。2026年9月にWebflowか�
 | `.htaccess` | cPanel(Apache)に置く場合の同等設定 |
 | `serve.py` | ローカル確認用サーバー |
 | `scripts/mirror_live_site.py` | 移行時に公開サイトを取り込んだスクリプト(記録用) |
+| `zh/` `ja/` | 中国語(簡体字)・日本語のページ。**直接編集しない**(下記スクリプトで生成) |
+| `i18n/zh.json` `i18n/ja.json` | 翻訳辞書(英語の文 → 訳文) |
+| `scripts/build_i18n.py` | 英語ページと翻訳辞書から `zh/` `ja/` を生成し、言語切替と hreflang を入れる |
 
 ページ: `/` `/menu` `/our-chef` `/gallery` `/about` `/sake-pairing` `/omakase` `/private-events`
+
+中国語版は `/zh/...`、日本語版は `/ja/...`(例: `/zh/menu`, `/ja/omakase`)。
 
 Private Events ページは Webflow の未公開下書きから 2026年9月に公開しました(スタイルは下書き時の `css/new-sushi-oribe-b0dca6.webflow.css` を使用)。
 同じ下書きにあった Omakase ページの写真差し替えは未反映です。
@@ -42,6 +47,30 @@ http://localhost:8080 で本番と同じ URL 構造で表示されます。
 4. `git commit` して `git push` し、cPanel の Git Version Control で「Deploy HEAD Commit」を押す
 
 Claude Code に「menu.html の春メニュー画像を images/xxx.jpg に差し替えて」のように頼めば 1〜3 をまとめて行えます。
+
+## 多言語(中国語・日本語)の更新
+
+英語の `*.html` が原本です。`zh/` `ja/` は生成物なので直接編集しないでください。
+
+1. 英語ページを編集する
+2. 未翻訳の文を確認する
+
+```bash
+python scripts/build_i18n.py check
+```
+
+3. 表示された文の訳を `i18n/zh.json` と `i18n/ja.json` に追加する(Claude Code に「未翻訳を訳して」と頼めば済みます)
+4. 中国語・日本語ページを作り直す
+
+```bash
+python scripts/build_i18n.py build
+```
+
+メニュー画像は英語のまま全言語で共通です。画像だけの差し替えなら 2〜4 は不要です(ただし build は実行してください。画像のパスが各言語に反映されます)。
+
+以下は意図的に英語のまま残しています: お客様のレビュー、人名、住所、日本酒の銘柄名、価格。
+About ページの英日併記の段落は、日本語版では英語のまま(隣に日本語の段落があるため)、中国語版では英語部分だけを中国語にしています。
+WhatsApp ボタンの定型文は、スタッフが読めるよう全言語とも英語です。
 
 ## 計測タグ
 
