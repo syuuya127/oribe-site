@@ -99,3 +99,40 @@
 /* 中国語・日本語の本文は各言語のフォントで表示する */
 html[lang="zh-Hans"] body { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif; }
 html[lang="ja"] body { font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", Arial, sans-serif; }
+
+/*
+ * 日本語・中国語の見出しは、言葉の途中(「物/語」「流/儀」など)で改行しないようにする。
+ * 翻訳辞書 i18n/ja.json・zh.json の見出しには、改行してよい位置にゼロ幅スペースを入れてある。
+ * 1 行に収まらない長い語だけは、はみ出さないよう文字単位で折り返す。
+ */
+html[lang="ja"] h1,
+html[lang="ja"] h2,
+html[lang="ja"] h3,
+html[lang="zh-Hans"] h1,
+html[lang="zh-Hans"] h2,
+html[lang="zh-Hans"] h3 {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
+  text-wrap: balance;
+}
+
+/*
+ * 中国語・日本語版の見出しサイズ調整。
+ * 1 文字が英字の約 2 倍の幅になるため、英語用の特大サイズのままだとスマホで 1 行 5〜6 文字しか入らない。
+ */
+/* ページ上部の見出し(メニュー、日本酒ペアリングなど): 英語用の「文字幅の 80%」制限を外す */
+html[lang="ja"] .heading-8,
+html[lang="zh-Hans"] .heading-8 {
+  width: auto;
+}
+/* トップ・おまかせ・季節メニューなどの特大見出し: スマホでは少し小さく */
+@media screen and (max-width: 479px) {
+  html[lang="ja"] h1.heading-15,
+  html[lang="ja"] h1.heading-18,
+  html[lang="zh-Hans"] h1.heading-15,
+  html[lang="zh-Hans"] h1.heading-18 {
+    font-size: 31px;
+    line-height: 1.35;
+  }
+}

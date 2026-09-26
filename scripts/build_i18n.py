@@ -146,13 +146,16 @@ def translate_html(src: str, d: dict, missing: set) -> str:
             missing.add(k)
             return raw
         v = d[k]
+        if is_attr:
+            # 改行位置の目印(ゼロ幅スペース)は本文の見出し用。title・meta・alt には入れない
+            v = v.replace("​", "")
         lead = raw[: len(raw) - len(raw.lstrip())]
         trail = raw[len(raw.rstrip()):]
         return lead + (esc_attr(v) if is_attr else esc_text(v)) + trail
 
     # <title>
     src = re.sub(r"(<title>)(.*?)(</title>)",
-                 lambda m: m.group(1) + tr(m.group(2), False) + m.group(3),
+                 lambda m: m.group(1) + tr(m.group(2), False).replace("​", "") + m.group(3),
                  src, count=1, flags=re.S)
 
     # meta description / og / twitter
