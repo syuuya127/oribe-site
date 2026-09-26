@@ -79,7 +79,8 @@ WhatsApp ボタンの定型文は、スタッフが読めるよう全言語と�
 - GA4: `G-VR69HZB6WG`
 - Google Tag Manager: `GTM-K32VKRM`
 - Meta Pixel: `3545309522196977`
-- 予約ボタンのクリック計測(`reserve_click` イベント)は各ページ末尾のインラインスクリプト
+- クリック計測は `js/site-tracking.js`(全ページ共通)。`reserve_click`(予約ボタン)、`event_enquiry_click`(貸切の問い合わせ)、`language_switch`、`menu_course_select`、`social_click`、`preorder_click` を送る。すべてに `site_language`(en/zh/ja)が付く
+- GTM 側にも `click_menu` `click_reservation` `click_whatsapp` などのイベントがある。TableCheck の予約ステップ(`reserve_form` → `reserve_review` → `reserve_success`)も同じ GA4 に入る
 
 ## 外部サービス
 

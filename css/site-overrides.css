@@ -136,3 +136,37 @@ html[lang="zh-Hans"] .heading-8 {
     line-height: 1.35;
   }
 }
+
+/*
+ * 横方向のはみ出し修正(タブレット〜PC で横スクロールが出ていた)
+ */
+/* 100vw 指定の要素: PC ではスクロールバーの幅(約 15px)だけはみ出すので上限を付ける */
+.dish-slider.heroslider.testonly,
+.mask.heronly.testonly,
+.dish-slider.menu,
+.div-block-177,
+.div-block-180 { max-width: 100%; }
+
+/* トップ「The Art of Omakase」の枠: 480〜991px で外枠 154% × 内枠 65% になっており、
+   見た目は画面幅ちょうどだが右側に空の余白がはみ出していた。外枠・内枠とも 100% にする */
+@media screen and (min-width: 480px) and (max-width: 991px) {
+  .div-block-27,
+  .div-block-27 > .div-block-28 { width: 100%; }
+}
+
+/* トップの季節メニュー・メニューページのスライド: 992〜1439px で幅 110% + 左 -27px */
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .dish-slider.homedish,
+  .dish-slider.menu { width: 100%; margin-left: 0; }
+}
+
+/* 地図付近の装飾背景画像(幅 120%〜200% で左右に張り出す)を枠内で切り取る */
+.div-block-136 { position: relative; overflow-x: clip; }
+
+/* ギャラリーの写真枠: 1440px 以上で幅 150%(最大 1600px)になり右に張り出していた */
+@media screen and (min-width: 1440px) {
+  .container-11 { width: 100%; max-width: 1600px; margin-left: auto; margin-right: auto; }
+}
+
+/* 念のための安全策: 将来どこかがはみ出しても横スクロールを出さない */
+html { overflow-x: clip; }

@@ -293,10 +293,4 @@ src="https://www.facebook.com/tr?id=3545309522196977&ev=PageView&noscript=1"
   <a id="oribe-cta-wa" href="https://wa.me/60182040084?text=Hi%20Sushi%20Oribe%2C%20I%27d%20like%20to%20reserve%20omakase.%20Date%3A%20___%20Time%3A%20___%20Pax%3A%20___">WhatsApp</a>
   <a id="oribe-cta-book" href="https://www.tablecheck.com/en/sushi-oribe/reserve/landing" target="_blank" rel="noopener">予約する</a>
 </div>
-<script>
-document.addEventListener('click',function(e){
-  var a=e.target.closest('a'); if(!a) return; var h=(a.href||'');
-  if(h.indexOf('tablecheck.com')>-1){ if(window.fbq)fbq('track','Schedule'); if(window.gtag)gtag('event','reserve_click',{method:'tablecheck'}); }
-  if(h.indexOf('wa.me')>-1||h.indexOf('whatsapp')>-1){ if(window.fbq)fbq('track','Contact'); if(window.gtag)gtag('event','reserve_click',{method:'whatsapp'}); }
-});
-</script></body></html>
+<script src="/js/site-tracking.js" defer></script></body></html>
