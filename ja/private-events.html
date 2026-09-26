@@ -103,18 +103,17 @@ fbq('track', 'PageView');
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"],
           "opens": "18:00",
-          "closes": "23:00"
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+          "opens": "18:00",
+          "closes": "22:30"
         }
       ],
-      "specialOpeningHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Monday",
-        "opens": "00:00",
-        "closes": "00:00",
-        "description": "Closed on Mondays"
-      },
       "acceptsReservations": "True",
       "hasMenu": "https://oribe-sushi.com.my/menu",
       "menu": "https://oribe-sushi.com.my/menu",

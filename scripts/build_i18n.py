@@ -113,6 +113,8 @@ def extract():
     seen = {}
     for p in PAGES:
         src = (ROOT / f"{p}.html").read_text(encoding="utf-8")
+        # 言語切替は翻訳しないので対象外
+        src = re.sub(re.escape(SWITCH_START) + r".*?" + re.escape(SWITCH_END), "", src, flags=re.S)
         for k in iter_keys(src):
             seen.setdefault(k, []).append(p)
     out = {k: sorted(set(v)) for k, v in seen.items()}

@@ -81,8 +81,6 @@
  "• Lunch 12:00 – 15:00 (Last order: 13:30)": "• ランチ 12:00 – 15:00（ラストオーダー 13:30）",
  "• Dinner 18:00 – 22:00 (Last order: 20:30)": "• ディナー 18:00 – 22:00（ラストオーダー 20:30）",
  "Friday – Sunday": "金曜〜日曜",
- "• Dinner 18:00 – 20:00": "• ディナー 18:00 – 20:00",
- "• Dinner 20:30 – 23:00 (Last order: 20:30)": "• ディナー 20:30 – 23:00（ラストオーダー 20:30）",
  "(Monday Close)": "（月曜定休）",
  "8 FREE parking spaces available:": "無料駐車場 8台：",
  "There are 8 FREE parking spaces available for Sushi Oribe customers on a first-come-first-served basis. If all spaces are occupied, you can find paid parking at Vipod Residences.": "寿司織部をご利用のお客様は、無料駐車場8台を先着順でご利用いただけます。満車の場合は、Vipod Residencesの有料駐車場をご利用ください。",
@@ -365,7 +363,6 @@
  "Location": "所在地",
  "Vipod Residences, Ground Floor, Block C-1, No 6 Jalan Kia Peng, 50450 Kuala Lumpur — five minutes from Pavilion KL": "Vipod Residences 1階, Block C-1, No 6 Jalan Kia Peng, 50450 Kuala Lumpur（Pavilion KLから5分）",
  "Hours": "営業時間",
- "Tuesday to Sunday. Lunch 12:00–15:00. Dinner 18:00–23:00. Closed Mondays.": "火曜〜日曜。ランチ 12:00〜15:00、ディナー 18:00〜23:00。月曜定休。",
  "Frequently Asked Questions": "よくある​ご質問",
  "Q: What is omakase?": "Q. おまかせとは何ですか？",
  "Omakase means \"I leave it to you\" in Japanese. The chef selects and prepares each course based on the freshest seasonal ingredients. At Sushi Oribe, Chef Naoya Kawasaki personally crafts your meal at the counter, explaining each piece as it is served.": "おまかせとは、日本語で「あなたにお任せします」という意味です。料理人がその日いちばんの旬の素材から一品ずつ選んで仕立てます。寿司織部では、料理長 川崎直也がカウンターで自ら握り、一貫ごとに説明を添えてお出しします。",
@@ -382,7 +379,6 @@
  "Q: Do you offer vegetarian or dietary options?": "Q. ベジタリアンや食事制限に対応できますか？",
  "Please contact us in advance via WhatsApp regarding dietary requirements. Chef Nao can adapt the omakase to most dietary needs with sufficient notice.": "食事制限がある場合は、事前にWhatsAppでご相談ください。早めにお知らせいただければ、多くのご要望に合わせておまかせを調整できます。",
  "Q: What are your operating hours?": "Q. 営業時間は？",
- "We open Tuesday through Sunday. Lunch service: 12:00–15:00. Dinner service: 18:00–23:00. Closed on Mondays.": "火曜〜日曜の営業です。ランチ 12:00〜15:00、ディナー 18:00〜23:00。月曜定休です。",
  "Q: Is Sushi Oribe a good place for an anniversary or special occasion?": "Q. 記念日やお祝いに向いていますか？",
  "Yes. Sushi Oribe is a popular choice for anniversaries, celebrations, and special occasions in Kuala Lumpur. The intimate counter and two private rooms create a refined, memorable setting. Let us know the occasion when you reserve via WhatsApp and we will help make it special.": "はい。記念日やお祝いの場として多くの方にご利用いただいています。落ち着いたカウンターと個室2室で、特別な時間をお過ごしください。WhatsAppでのご予約時に用途をお知らせいただければ、演出のお手伝いもいたします。",
  "Q: Is Sushi Oribe suitable for a business dinner?": "Q. 接待や会食に使えますか？",
@@ -449,5 +445,8 @@
  "Play video": "動画を再生",
  "Birthday Event @ Sushi Oribe": "寿司織部での誕生日パーティー",
  "Get in touch": "お問い合わせ",
- "RESERVE VIA WHATSAPP": "WhatsAppで相談する"
+ "RESERVE VIA WHATSAPP": "WhatsAppで相談する",
+ "• Dinner 18:00 – 22:30": "• ディナー 18:00 – 22:30",
+ "Tuesday to Sunday. Lunch 12:00–15:00. Dinner 18:00–22:00 (Tuesday to Thursday), 18:00–22:30 (Friday to Sunday). Closed Mondays.": "火曜〜日曜。ランチ 12:00〜15:00。ディナー 18:00〜22:00（火〜木）、18:00〜22:30（金〜日）。月曜定休。",
+ "We open Tuesday through Sunday. Lunch service: 12:00–15:00. Dinner service: 18:00–22:00 from Tuesday to Thursday, and 18:00–22:30 from Friday to Sunday. Closed on Mondays.": "火曜〜日曜の営業です。ランチは12:00〜15:00、ディナーは火〜木が18:00〜22:00、金〜日が18:00〜22:30です。月曜定休です。"
 }
