@@ -21,6 +21,10 @@ MASKS = {"index.html": '<div class="mask home w-slider-mask">',
          "menu.html": '<div class="mask menus w-slider-mask">'}
 TITLE = re.compile(r'(<div class="text-block-23b">)([^<]*)(</div>)')
 TAGLINE = re.compile(r'(<div class="text-block-27[^"]*">)([^<]*)(</div>)')
+# メニューページの季節の背景(パソコン用 image-89 / スマホ用 image-90。クラス名は Webflow 時代のまま sakura-v2)
+BG = {"desktop": re.compile(r'<img[^>]*class="image-89 sakura-v2"[^>]*>'),
+      "mobile": re.compile(r'<img[^>]*class="image-90 sakura-v2-m"[^>]*>')}
+BG_CLASS = {"desktop": "image-89 sakura-v2", "mobile": "image-90 sakura-v2-m"}
 
 
 def slide(img: str, lines=None) -> str:
@@ -55,6 +59,14 @@ def apply(page: str, menu: dict) -> None:
     s, n2 = TAGLINE.subn(lambda m: m[1] + menu["tagline"] + m[3], s, count=1)
     if not (n1 and n2):
         sys.exit(f"{page}: 見出し/ひと言の場所が見つからない")
+    if page == "menu.html" and "background" in menu:
+        for kind, pat in BG.items():
+            tag = f'<img src="/images/{menu["background"][kind]}" loading="lazy" alt="" class="{BG_CLASS[kind]}"/>'
+            s, n = pat.subn(tag, s, count=1)
+            if not n:
+                sys.exit(f"{page}: 背景({kind})の場所が見つからない")
+            if not (ROOT / "images" / menu["background"][kind]).exists():
+                sys.exit(f"画像が無い: images/{menu['background'][kind]}")
     for course in ("lunch", "dinner"):
         for img in [menu[course]["cover"]] + [d[0] for d in menu[course]["dishes"]]:
             for name in (img, img.replace(".webp", "-p-500.webp")):

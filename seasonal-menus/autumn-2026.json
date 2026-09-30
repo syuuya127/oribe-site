@@ -1,6 +1,11 @@
 {
   "title": "Autumn Omakase",
   "tagline": "Savouring the Richness of Autumn",
+  "background": {
+    "desktop": "fuji-autumn-maple.webp",
+    "mobile": "fuji-autumn-maple-m.webp",
+    "credit": "Photo by elroy on Unsplash (Unsplash License) https://unsplash.com/photos/zr4K9y8s_JY"
+  },
   "lunch": {
     "cover": "Oribe-Autumn-Menu-2026-Lunch-01.webp",
     "dishes": [
