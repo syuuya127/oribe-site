@@ -1,0 +1,31 @@
+{
+  "title": "Autumn Omakase",
+  "tagline": "Savouring the Richness of Autumn",
+  "lunch": {
+    "cover": "Oribe-Autumn-Menu-2026-Lunch-01.webp",
+    "dishes": [
+      ["Oribe-Autumn-Menu-2026-Lunch-02.webp", ["Crab & Lotus Root Manju"]],
+      ["Oribe-Autumn-Menu-2026-Lunch-03.webp", ["Suzuki with Matcha Salt & Shio Kombu", "Tsubugai (Whelk) with Wasabi"]],
+      ["Oribe-Autumn-Menu-2026-Lunch-04.webp", ["Deep-fried Salmon Milt", "Ankimo Sandwich with Shiitake Mushroom"]],
+      ["Oribe-Autumn-Menu-2026-Lunch-05.webp", ["Mentaiko Chawanmushi"]],
+      ["Oribe-Autumn-Menu-2026-Lunch-06.webp", ["Grilled Kamasu (Barracuda) with Sweet Potato"]],
+      ["Oribe-Autumn-Menu-2026-Lunch-07.webp", ["Fatty Tuna, Aori Ika (Bigfin Reef Squid), Uni (Sea Urchin)", "Engawa (Flounder Fin), Shima Aji (Striped Jack), Saba Bo-zushi (Mackerel)"]],
+      ["Oribe-Autumn-Menu-2026-Lunch-08.webp", ["Mushroom Donabe Rice with Salmon Roe"]],
+      ["Oribe-Autumn-Menu-2026-Lunch-09.webp", ["Chestnut Castella with Milk Ice Cream"]]
+    ]
+  },
+  "dinner": {
+    "cover": "Oribe-Autumn-Menu-2026-Dinner-01.webp",
+    "dishes": [
+      ["Oribe-Autumn-Menu-2026-Dinner-02.webp", ["Crab & Lotus Root Manju"]],
+      ["Oribe-Autumn-Menu-2026-Dinner-03.webp", ["Suzuki (Japanese Seabass), Shima Aji, Toro", "Sujiko (Fresh Salmon Roe)"]],
+      ["Oribe-Autumn-Menu-2026-Dinner-04.webp", ["Steamed Eihire (Stingray Fin) & Namako (Sea Cucumber)"]],
+      ["Oribe-Autumn-Menu-2026-Dinner-05.webp", ["Mentaiko Chawanmushi"]],
+      ["Oribe-Autumn-Menu-2026-Dinner-06.webp", ["Fresh Yuba with Uni and Dashi Jelly"]],
+      ["Oribe-Autumn-Menu-2026-Dinner-07.webp", ["Sanma (Pacific Saury) with Liver Sauce, Masu (Trout)", "Aori Ika, Saba Bo-zushi, Engawa"]],
+      ["Oribe-Autumn-Menu-2026-Dinner-08.webp", ["Hot Dish (choice of one)", "Straw-grilled Duck, Broccoli Purée, Yuzu Pepper & Honey Sauce"]],
+      ["Oribe-Autumn-Menu-2026-Dinner-09.webp", ["Hot Dish (choice of one)", "Deep-fried Anago (Sea Eel) with Seasonal Vegetables"]],
+      ["Oribe-Autumn-Menu-2026-Dinner-10.webp", ["Homemade Chestnut Daifuku with Seasonal Fruits"]]
+    ]
+  }
+}
