@@ -160,11 +160,19 @@ html[lang="zh-Hans"] .heading-8 {
   .dish-slider.menu { width: 100%; margin-left: 0; }
 }
 
-/* 季節メニューのスライド写真: 480px 以上は幅 500px 固定。
-   写真は遅延読み込みなので、幅を決めておかないと読み込み前のスライド幅が 5px になり、
-   Webflow のスライダーが「全部 1 ページに収まる」と判断して左右の矢印が効かなくなる */
+/* 季節メニューのスライド写真: 縦横比 2:3 を先に決め、480px 以上は幅 500px 固定。
+   写真は遅延読み込みなので、大きさを決めておかないと読み込み前のスライドが 5px になり、
+   Webflow のスライダーが「全部 1 ページに収まる」と判断して矢印が効かなくなる(PC)/
+   枠の高さが縮んで写真が下のボタンに重なる(スマホ) */
+.w-slider-mask .dish-slide img { height: auto; aspect-ratio: 2 / 3; }
 @media screen and (min-width: 480px) {
-  .w-slider-mask .dish-slide img { width: 500px; max-width: none; height: auto; aspect-ratio: 2 / 3; }
+  .w-slider-mask .dish-slide img { width: 500px; max-width: none; }
+}
+
+/* スマホの季節の背景: 元の位置(top:-108px)だとほぼ全部スライダーの裏に隠れて見えない。
+   見出し(Autumn Omakase)の裏まで持ち上げ、少し明るくする */
+@media screen and (max-width: 767px) {
+  .div-block-143.sakura-v2 .image-90.sakura-v2-m { top: -460px; opacity: .32; }
 }
 
 /* 地図付近の装飾背景画像(幅 120%〜200% で左右に張り出す)を枠内で切り取る */

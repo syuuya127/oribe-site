@@ -32,7 +32,7 @@ def slide(img: str, lines=None) -> str:
     # 表示は春と同じ 500px 幅。高精細画面には 1000px 版を出す(画像は 1000x1500 で作り、-p-500 を縮小版として置く)
     small = img.replace(".webp", "-p-500.webp")
     inner = (f'<img loading="lazy" src="/images/{small}" srcset="/images/{small} 500w, /images/{img} 1000w" '
-             f'sizes="500px" alt="{alt}" class="image-9"/>')
+             f'sizes="500px" width="500" height="750" alt="{alt}" class="image-9"/>')
     if lines:
         text = "<br/>".join(html.escape(t, quote=False) for t in lines)
         inner += f'<div class="div-block-55"></div><div class="text-block-6">{text}</div>'
