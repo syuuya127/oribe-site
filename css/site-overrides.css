@@ -169,6 +169,18 @@ html[lang="zh-Hans"] .heading-8 {
   .w-slider-mask .dish-slide img { width: 500px; max-width: none; }
 }
 
+/* 季節スライダー(スマホ): メニューページは元々高さ 100vh + 下マージン -160px で RESERVE ボタンを
+   引き上げる作りで、画面の縦が短い(Safari のツールバー分など)と写真がボタンやページ送りの点に重なる。
+   高さを中身なりにし、点の分だけ下に余白を取ってから RESERVE を 30px 下に置く */
+@media screen and (max-width: 479px) {
+  .dish-slider.menu { height: auto; padding-bottom: 56px; margin-bottom: -110px; }
+  .dish-slider.menu > .w-slider-nav { top: auto; bottom: 14px; height: auto; padding-top: 0; }
+  /* トップの季節スライダーも同じ(枠の高さ 100vh のため、縦の短い画面で写真の下が切れ、点が下のボタンに重なる) */
+  .mask.home { height: auto; }
+  .dish-slider.homedish { padding-bottom: 50px; }
+  .dish-slider.homedish > .w-slider-nav { top: auto; bottom: 14px; height: auto; padding-top: 0; }
+}
+
 /* スマホの季節の背景: 元の位置(top:-108px)だとほぼ全部スライダーの裏に隠れて見えない。
    見出し(Autumn Omakase)の裏まで持ち上げ、少し明るくする */
 @media screen and (max-width: 767px) {
