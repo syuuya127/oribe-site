@@ -8,7 +8,7 @@
   },
   "cover_leaves_credit": "Maple leaves composited on both covers: photos by Lucas George Wendt on Unsplash (Unsplash License) https://unsplash.com/photos/gvQmJwAhZDc https://unsplash.com/photos/LNh5SEUmMrc",
   "lunch": {
-    "cover": "Oribe-Autumn-Menu-2026-Lunch-01.webp",
+    "cover": "Oribe-Autumn-Menu-2026-Lunch-01-leaves.webp",
     "dishes": [
       ["Oribe-Autumn-Menu-2026-Lunch-02.webp", ["Crab & Lotus Root Manju"]],
       ["Oribe-Autumn-Menu-2026-Lunch-03.webp", ["Suzuki with Matcha Salt & Shio Kombu", "Tsubugai (Whelk) with Wasabi"]],
@@ -21,7 +21,7 @@
     ]
   },
   "dinner": {
-    "cover": "Oribe-Autumn-Menu-2026-Dinner-01.webp",
+    "cover": "Oribe-Autumn-Menu-2026-Dinner-01-leaves.webp",
     "dishes": [
       ["Oribe-Autumn-Menu-2026-Dinner-02.webp", ["Crab & Lotus Root Manju"]],
       ["Oribe-Autumn-Menu-2026-Dinner-03.webp", ["Suzuki (Japanese Seabass), Shima Aji, Toro", "Sujiko (Fresh Salmon Roe)"]],
