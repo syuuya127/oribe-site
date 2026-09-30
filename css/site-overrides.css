@@ -160,6 +160,13 @@ html[lang="zh-Hans"] .heading-8 {
   .dish-slider.menu { width: 100%; margin-left: 0; }
 }
 
+/* 季節メニューのスライド写真: 480px 以上は幅 500px 固定。
+   写真は遅延読み込みなので、幅を決めておかないと読み込み前のスライド幅が 5px になり、
+   Webflow のスライダーが「全部 1 ページに収まる」と判断して左右の矢印が効かなくなる */
+@media screen and (min-width: 480px) {
+  .w-slider-mask .dish-slide img { width: 500px; max-width: none; height: auto; aspect-ratio: 2 / 3; }
+}
+
 /* 地図付近の装飾背景画像(幅 120%〜200% で左右に張り出す)を枠内で切り取る */
 .div-block-136 { position: relative; overflow-x: clip; }
 
