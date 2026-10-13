@@ -1,0 +1,80 @@
+{
+  "season": "Autumn",
+  "year": "2026",
+  "file_prefix": "Oribe-Autumn-Menu-2026",
+  "drive_folder": "https://drive.google.com/drive/folders/13ObBvLkq8IHwKroSwngpANVxp3rKZNg6",
+  "courses": {
+    "Lunch": {
+      "cover": {
+        "photo": "4708",
+        "title_top": 150,
+        "file_suffix": "-leaves",
+        "leaves": [
+          {"leaf": "branch", "x": 150, "y": 170, "width": 520, "angle": 200, "flip": true, "shadow": [14, 20, 16, 110], "bright": 1.15},
+          {"leaf": "leaf_2", "x": 830, "y": 1320, "width": 190, "angle": 35, "shadow": [8, 10, 8, 120], "bright": 0.92},
+          {"leaf": "leaf_0", "x": 930, "y": 1180, "width": 130, "angle": -20, "shadow": [6, 8, 6, 110], "bright": 0.92},
+          {"leaf": "leaf_3", "x": 900, "y": 560, "width": 150, "angle": 60, "blur": 3, "shadow": [30, 40, 20, 60]}
+        ]
+      },
+      "dishes": ["4682", "4687", "4685", "4684", "4683", "4689", "4686", "4681"]
+    },
+    "Dinner": {
+      "cover": {
+        "photo": "4785",
+        "title_top": 118,
+        "file_suffix": "-leaves",
+        "leaves": [
+          {"leaf": "branch", "x": 860, "y": 150, "width": 480, "angle": 160, "shadow": [14, 20, 16, 100], "bright": 0.95},
+          {"leaf": "leaf_0", "x": 110, "y": 1330, "width": 180, "angle": -30, "shadow": [8, 10, 8, 120], "bright": 0.92},
+          {"leaf": "leaf_2", "x": 90, "y": 520, "width": 130, "angle": 15, "blur": 3, "shadow": [30, 40, 20, 60]}
+        ]
+      },
+      "dishes": ["4769", "4768", "4771", "4777", "4778", "4776", "4780", "4773", "4772"]
+    }
+  },
+  "leaf_sources": {
+    "branch": "https://images.unsplash.com/photo-1633483780966-0816eb999818?fm=jpg&q=90&w=2400",
+    "circle": "https://images.unsplash.com/photo-1633483780994-d5bb2d354359?fm=jpg&q=90&w=2400",
+    "credit": "Lucas George Wendt on Unsplash (Unsplash License): https://unsplash.com/photos/gvQmJwAhZDc https://unsplash.com/photos/LNh5SEUmMrc"
+  },
+  "photos": {
+    "4681": "1XiR7jwYvXrpFA-6XlTZUfhhUQ_398_0X",
+    "4682": "1Ax716xJz9VjrQpfqa4lw6T80KamFTaNe",
+    "4683": "1BngSFuwwj1YoEkzIUZpt5DFNJ5boqNcb",
+    "4684": "1tSujRBbpcHJbwxIBAdv97T61nXLmmuwd",
+    "4685": "1KLanbvxSXYgtKSWNDVtYi7SuyQ08G7oh",
+    "4686": "1UiATSs7ZPRknMS5jqh3U-Vl5N3U2pgDo",
+    "4687": "1xXxCNugust-DdtmfbfjrK1UQi90A8Jx3",
+    "4688": "1_snejCJa8O2DN4cf4LZLaUjymX5lqQap",
+    "4689": "1kDp9OKwQ12-jzgjTNeQ1_fUeuUFnvsAd",
+    "4708": "1OIFFS7KsH4lN9RQ6UPHUlhW8FbVASJO9",
+    "4709": "1UORRaRBZuIy2yVorgvhRKfeM-BItHL1V",
+    "4715": "1RGN4Y_rhUowMFOfDG78UH3Q3CJ_5s34s",
+    "4716": "1GpYT-qeM7rTi_3hEgI1ubx3PL3g55kng",
+    "4718": "1tfX4e81hb1zGim3uUHRc6OjD0jiQzsYi",
+    "4723": "1DgvzrtAk8_dHSH_f8aHukyOb2ZkQaXB2",
+    "4724": "1ED8KoV75K2BuADb9kblHBDhL92c53OCh",
+    "4728": "1g9a8jZ-f0mnYofCVqhs_YA4LEhb-iHuN",
+    "4733": "1X8_cdAD8am85hWcyj-C3jf4htE29xzQZ",
+    "4735": "1VGsZdgKd6TIIOdqr1enlIH4ydD_9FuCD",
+    "4736": "1eKfD9rBw2hHD_CTCJImcWRtTh_kvDzmA",
+    "4741": "1P2xKyzmmC7hUwrV970PxutEcKezuJSe1",
+    "4744": "1YbxKFxz0hp464hLCN_DuM0ZGghpc5MAK",
+    "4747": "1REqUHHPZAdTn-eh8jenUwv8aslfwU4AL",
+    "4761": "10-qDBw3Kp7hVhgZypOwoC4vTpk6eEWXE",
+    "4765": "1CYUHpWqoBnUXvI8cCNHSd1ILcCMLOp8i",
+    "4768": "1tbwbVjZ25mpLOq6T0CbD3wHgTcXXhU3Z",
+    "4769": "1GeKvHZqxIHFJdOWTD6uuNWL9AgR1GLdG",
+    "4770": "19aT40e0FXniO1z62vUjyUkCIxyy1zuO_",
+    "4771": "1_EH46elgqTfgyyM3SHX6gG6YipH5Vss6",
+    "4772": "1ko1EkPN3EXHNpf_ex16jU3KMx5EggQRM",
+    "4773": "1OAl8IAuM_izFVZWy1JpSoTCgkJSTEdSJ",
+    "4774": "1trAB0Zkh372BU8EoRPnmTaEG-NwYZKdA",
+    "4776": "1SqaSqNbK4y1GUCrqbD5Dnwz88wjzZ5Cz",
+    "4777": "1RTtdpWrlfpXBjjjpKQX3liMXpEvwZMFa",
+    "4778": "1ot-MiUgtzhWbRTJOfPu0cLJdRTWMbfRF",
+    "4780": "1ocH2EnT8d4T4fbzYs15KgGci4wPW8ETm",
+    "4785": "1hBHMjuNNGc9HWFOtkwdlymZXKK1hoHRA",
+    "4786": "1VQ6n1TKXPf6nzJgtl-IqtEHRTVJSJSWB"
+  }
+}
