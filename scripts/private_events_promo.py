@@ -19,10 +19,11 @@ BLOCK = (
     + 'sizes="(max-width: 767px) 100vw, 560px" loading="lazy" width="1600" height="1067" '
     + 'alt="A private room at Sushi Oribe set with a full omakase course"/></div>'
     + '<div class="pe-promo-text">'
-    + '<div class="pe-promo-eyebrow">Private Events &amp; Celebrations</div>'
-    + '<h2 class="pe-promo-heading">Host Your Occasion at Sushi Oribe</h2>'
-    + '<p class="pe-promo-body">Birthdays, anniversaries, business dinners and full buyouts. '
-    + 'Chef Naoya Kawasaki tailors the omakase to your guests and occasion, at our counter or at your chosen venue.</p>'
+    + '<div class="pe-promo-eyebrow">Private Events &amp; Off-Site Catering</div>'
+    + '<h2 class="pe-promo-heading">Omakase, Wherever You Celebrate</h2>'
+    + '<p class="pe-promo-body">In our private room or at your home, office or event venue. '
+    + 'Birthdays, anniversaries, business dinners and full buyouts, with Chef Naoya Kawasaki tailoring '
+    + 'the omakase to your guests and occasion.</p>'
     + '<a href="/private-events" class="pe-promo-btn">Explore Private Events</a>'
     + "</div></div></section>"
     + END
