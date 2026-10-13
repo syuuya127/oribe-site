@@ -195,5 +195,26 @@ html[lang="zh-Hans"] .heading-8 {
   .container-11 { width: 100%; max-width: 1600px; margin-left: auto; margin-right: auto; }
 }
 
+/* 貸切・プライベートイベントへの案内枠(トップ・メニュー)。scripts/private_events_promo.py が差し込む */
+.pe-promo { background: #000; padding: 80px 24px; }
+.pe-promo-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 56px; }
+.pe-promo-photo { flex: 1 1 52%; min-width: 0; }
+.pe-promo-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.pe-promo-text { flex: 1 1 48%; min-width: 0; color: #fff; }
+.pe-promo-eyebrow { color: #b89867; font-family: "EB Garamond", serif; font-size: 18px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+.pe-promo-heading { color: #fff; font-family: "EB Garamond", serif; font-weight: 400; font-size: 44px; line-height: 1.15; margin: 0 0 20px; }
+.pe-promo-body { color: #d9d9d9; font-size: 16px; line-height: 1.7; margin: 0 0 28px; }
+.pe-promo-btn { display: inline-block; color: #b89867; border: 1px solid #b89867; padding: 12px 28px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; transition: background-color .2s, color .2s; }
+.pe-promo-btn:hover { background: #b89867; color: #000; }
+/* メニューページ(スマホ): 直前のコース一覧の RESERVE が Webflow の指定(top:100px)で 100px 下にずれて描かれるので、その分あける */
+@media screen and (max-width: 479px) {
+  #dinner-omakase + .pe-promo { margin-top: 100px; }
+}
+@media screen and (max-width: 767px) {
+  .pe-promo { padding: 56px 16px; }
+  .pe-promo-inner { flex-direction: column; gap: 28px; text-align: center; }
+  .pe-promo-heading { font-size: 32px; }
+}
+
 /* 念のための安全策: 将来どこかがはみ出しても横スクロールを出さない */
 html { overflow-x: clip; }

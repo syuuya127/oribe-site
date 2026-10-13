@@ -9,6 +9,7 @@
  *   menu_course_select    メニューページのランチ/ディナー         course
  *   social_click          Instagram / Facebook / TikTok / Google  platform, cta_location
  *   preorder_click        マグロ予約注文フォーム                  item, cta_location
+ *   private_events_click  貸切・イベントのページへのリンク        cta_location
  *
  * reserve_click と Meta の Schedule / Contact は移行前からあるイベントで、名前と method は変えていない。
  * GA4 のレポートで method 以外の項目を見るには、管理 > カスタム定義 でイベント スコープの
@@ -32,7 +33,8 @@
     "section-20": "home_art_of_omakase",
     "section-21": "home_seasonal_menu",
     "section-8": "home_meet_chef",
-    "testimonial-slider-small": "home_reviews"
+    "testimonial-slider-small": "home_reviews",
+    "pe-promo": "private_events_promo"
   };
 
   function ctaLocation(a) {
@@ -80,6 +82,12 @@
       if (/private(%20|\s|\+)event/i.test(href)) {
         send("event_enquiry_click", { method: "whatsapp", cta_location: loc });
       }
+      return;
+    }
+
+    // 貸切・プライベートイベントのページへのリンク(どこから来たかを cta_location で見る)
+    if (/\/private-events\/?$/.test(a.pathname || "") && a.hostname === location.hostname) {
+      send("private_events_click", { cta_location: loc });
       return;
     }
 
