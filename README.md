@@ -44,7 +44,7 @@ http://localhost:8080 で本番と同じ URL 構造で表示されます。
 1. 該当する `*.html` を編集する(メニュー画像の差し替えなら `menu.html` と `images/`)
 2. 新しい画像は `images/` に入れ、HTML の `src` と `srcset` を書き換える
 3. `python serve.py` で表示を確認する
-4. `git commit` して `git push` し、cPanel の Git Version Control で「Deploy HEAD Commit」を押す
+4. `git commit` して `git push` し、cPanel の Git Version Control で**先に「Update from Remote」**を押して HEAD Commit が今 push したコミットになったのを確かめてから「Deploy HEAD Commit」を押す(Update を飛ばすと古いコミットのまま配置され、何も変わらない。2026-10-20 に発生)
 5. 本番に出たら `python scripts/check_faq.py --live` で点検し(最後が `FAIL: 0` なら合格)、
    `python scripts/indexnow.py /omakase`(直したページ名)で Bing に更新を知らせる。ChatGPT の検索は Bing の登録を使う
 
