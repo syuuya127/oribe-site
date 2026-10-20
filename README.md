@@ -45,6 +45,8 @@ http://localhost:8080 で本番と同じ URL 構造で表示されます。
 2. 新しい画像は `images/` に入れ、HTML の `src` と `srcset` を書き換える
 3. `python serve.py` で表示を確認する
 4. `git commit` して `git push` し、cPanel の Git Version Control で「Deploy HEAD Commit」を押す
+5. 本番に出たら `python scripts/check_faq.py --live` で点検し(最後が `FAIL: 0` なら合格)、
+   `python scripts/indexnow.py /omakase`(直したページ名)で Bing に更新を知らせる。ChatGPT の検索は Bing の登録を使う
 
 Claude Code に「menu.html の春メニュー画像を images/xxx.jpg に差し替えて」のように頼めば 1〜3 をまとめて行えます。
 
