@@ -218,3 +218,23 @@ html[lang="zh-Hans"] .heading-8 {
 
 /* 念のための安全策: 将来どこかがはみ出しても横スクロールを出さない */
 html { overflow-x: clip; }
+
+/*
+ * Private Events ページのよくある質問（2026-10-20 追加・AI検索対策）
+ * 開閉は <details> の標準機能だけで行う（Webflow の動きに頼らない）
+ */
+.pe-faq { background: #000; max-width: 860px; margin: 0 auto; padding: 72px 24px 56px; }
+.pe-faq-title { color: #fff; font-family: "EB Garamond", serif; font-weight: 400; font-size: 40px; line-height: 1.2; text-align: center; margin: 0 0 32px; }
+.pe-faq-item { border-top: 1px solid #3a3a3a; }
+.pe-faq-item:last-of-type { border-bottom: 1px solid #3a3a3a; }
+.pe-faq-item summary { cursor: pointer; list-style: none; position: relative; padding: 20px 36px 20px 0; color: #fff; font-family: "EB Garamond", serif; font-size: 21px; line-height: 1.4; }
+.pe-faq-item summary::-webkit-details-marker { display: none; }
+.pe-faq-item summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); color: #b89867; font-size: 26px; }
+.pe-faq-item[open] summary::after { content: "\2212"; }
+.pe-faq-item summary:focus-visible { outline: 2px solid #b89867; outline-offset: 4px; }
+.pe-faq-item p { color: #cfcfcf; font-family: Varela, sans-serif; font-size: 15px; line-height: 1.75; margin: 0 0 22px; }
+@media screen and (max-width: 767px) {
+  .pe-faq { padding: 56px 16px 40px; }
+  .pe-faq-title { font-size: 30px; }
+  .pe-faq-item summary { font-size: 19px; }
+}
